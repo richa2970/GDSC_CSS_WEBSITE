@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photos</title>
+    </head>
+    <style>
+        
+        .container {
+  background-color: rgb(238, 240, 244);
+  display: flex;
+  height:350px;
+}
+.cont{
+    background: rgb(244, 231, 119);
+    display: flex;
+    height: 300px;
+    margin-top: 30px;
+    padding: 50px 0px 0px 271px;
+
+}
+.con{
+    background-color: rgb(205, 219, 11);
+    display: flex;
+    height: 383px;
+    margin-top: 30px;
+
+}
+         .items {
+   margin-left: 30px;
+  margin-right: 11px;
+  margin-top: 30px;
+  position: relative;
+  
+  animation-name: richa;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+.item {
+    color: #fae9dd;;
+  border: 2px inset red;
+  margin: 86px -25px 108px 131px;
+  padding: 40px 5px 5px 5px;
+  text-shadow: 2px 3px rgba(247, 245, 245, 0.295);
+  transition-property: background-color;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+.item:hover {
+  height: 130px;
+  border-radius: 20px;
+  box-shadow: 5px 5px #ed6e164a;
+  background-color: #f80909;
+}
+.it {
+  border: 2px inset red;
+  height: 200px;
+  transition: all 1s ease-in-out;
+  margin: 86px 62px 0px 79px;
+}
+.it:hover{
+    transform: rotate(360deg);
+    border-radius: 10px;
+    box-shadow: 5px 5px red;
+}
+    #s{
+        animation-name: richa1;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+    }
+    @keyframes richa1{
+        0%{
+        top:0px;
+        left: 0px;
+
+        }
+        25%{
+           top: 100px;
+           left: 0px;
+        }
+        75%{
+            top: 100px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+@keyframes richa{
+    from{
+      width: 100px;
+    }
+    to{
+      width:600px
+    }
+}
+
+img{
+    padding: 50px 50px 0px 50px;
+}
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="items">
+                <img src="Screenshot (11).png" width="50px" height="50px"><br>
+                <h1>NUMBER ONE</h1><br>
+                <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. </h4>
+            </div>
+            <div class="items" id="s">
+                <img src="NUMBER .png" width="50px" height="50px"><br>
+                <h1>NUMBER TWO</h1><br>
+                <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. </h4>
+            </div>
+            <div class="items" id="s">
+                <img src="Screenshot .png" width="50px" height="50px"><br>
+                <h1>NUMBER THREE</h1><br>
+                <h4>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. </h4>
+            </div>
+            
+        </div>
+        <div class="cont">
+            <form >
+                NAME: <input type="text"><br><br>
+                EMAIL: <input type="text"><br><br>
+                MESSAGE: <textarea type="text" rows="4" cols="50"></textarea><br><br>
+                <button>submit</button>
+            </form>
+            
+        </div>
+        <div class="con">
+            <div class="it">
+                <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__480.jpg" width="220px" height="200px">
+            </div>
+            <div class="it" >
+                <img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__480.jpg" alt="" width="220px" height="200px">
+            </div>
+           
+            
+        </div>
+</html>
